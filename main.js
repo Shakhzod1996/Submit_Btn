@@ -3,11 +3,13 @@ let btns = document.querySelectorAll(".btn");
 let pS = document.querySelectorAll(".pp");
 let rightSides = document.querySelectorAll(".right-side");
 
+
+btns[2].setAttribute('disabled', 'disabled')
 // ?Events
 divs[0].addEventListener('click', () => {
   btns[0].classList.add('btn-active');
   pS[0].classList.add('p-active')
-
+  btns[2].setAttribute('disabled', 'disabled')
   btns[1].classList.remove('btn-active');
   btns[2].classList.remove('btn-active');
   pS[1].classList.remove('p-active')
@@ -26,6 +28,8 @@ divs[1].addEventListener('click', () => {
   pS[1].classList.add('p-active')
   rightSides[0].classList.add('choose-title-hide')
   rightSides[1].classList.add('choose-description-show')
+btns[2].removeAttribute('disabled')
+
 
   btns[2].classList.remove('btn-active');
   pS[2].classList.remove('p-active')
@@ -50,6 +54,8 @@ divs[2].addEventListener('click', () => {
 function submitTitle() {
   btns[1].classList.add('btn-active');
   pS[1].classList.add('p-active')
+btns[2].removeAttribute('disabled')
+
 
   rightSides[2].classList.remove('confirm-data-show')
   rightSides[1].classList.add('choose-description-show')
