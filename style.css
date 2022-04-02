@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #203354;
+}
+
+.container-flex {
+  grid-template-columns: .8fr 1.2fr;
+  display: grid;
+  min-width: 700px;
+  /* min-height: 200px; */
+  padding: 30px;
+  background-color: #e3e3e3;
+  box-shadow: 1px 1px 5px #000;
+  border-radius: 10px;
+}
+
+.one, .two, .three {
+  display: flex;
+  margin: 10px;
+}
+
+.one p, .two p, .three p {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  border-radius: 50%;
+  color: #777;
+  font-weight: 900;
+  background-color: rgb(221, 221, 221);
+  cursor: pointer;
+}
+
+.p-active {
+  background-color: #203354 !important;
+  color: #fff !important;
+}
+
+.btn {
+  border: none;
+  background-color: inherit;
+  font-size: 20px;
+  color: #777;
+  cursor: pointer;
+  transition: all .4s ease;
+  font-weight: 600;
+}
+
+.btn:hover {
+  opacity: .7;
+}
+
+.btn-active {
+  color: #000;
+}
+
+/* ?Choose title */
+.choose-title {
+  margin-left: 30px;
+  /* display: none; */
+}
+
+.choose-title-hide {
+  display: none;
+}
+
+.choose-title p {
+  font-size: 21px;
+  color: #000;
+  margin: 10px;
+  font-weight: 700;
+}
+
+.choose-title button {
+  border: none;
+  background-color: rgb(205, 205, 205);
+  margin: 10px;
+  margin-top: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: all .4s ease;
+}
+
+.choose-title button:hover {
+  opacity: .7;
+}
+
+
+/* ?Choose Description */
+.choose-description {
+  margin: 10px;
+  margin-left: 30px;
+  display: none;
+}
+
+.choose-description-show {
+  display: block;
+}
+
+.choose-description p {
+  font-size: 21px;
+  color: #000;
+  margin: 10px;
+  font-weight: 700;
+}
+
+.desc-btns {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.desc-btns button {
+  background-color: rgb(205, 205, 205);
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: all .4s ease;
+  border: none;
+}
+
+.desc-btns button:hover {
+  opacity: .7;
+}
+
+/* ?Conform Data */
+.confirm-data {
+  margin-left: 30px;
+  display: none;
+}
+
+.confirm-data-show {
+  display: block;
+}
+
+.confirm-data p {
+  font-size: 21px;
+  color: #000;
+  margin: 10px;
+  font-weight: 700;
+}
+
+/* ?Done */
+.done {
+  margin-left: 30px;
+  display: none;
+}
+
+.done-show {
+  display: block;
+}
+
+.done p {
+  font-size: 21px;
+  color: #000;
+  margin: 10px;
+  font-weight: 700;
+  color: green;
+}
+
+
+.green{
+  color: green;
+}
+

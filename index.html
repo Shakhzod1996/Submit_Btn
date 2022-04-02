@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="container-flex">
+    <div class="left-content">
+      <div class="div one"><p class="pp p-active p-1">1</p><button class="btn first-btn btn-active">Choose title</button></div>
+      <div class="div two"><p class="pp p-2">2</p><button class="btn second-btn">Choose description</button></div>
+      <div class="div three"><p class="pp p-3">3</p><button class="btn third-btn">Confirm data</button></div>
+    </div>
+
+    <div class="right-content">
+
+      <!-- ?Choose Title ------>
+      <div class="choose-title right-side">
+        <p>Choose Title content</p>
+        <button class="title-submit" onclick="submitTitle()">Submit title</button>
+      </div>
+
+      <!-- ?Choose Description ------>
+      <div class="choose-description right-side">
+        <p>Choose Description Content</p>
+        <div class="desc-btns">
+          <button class="desc-go-back" onclick="backDesc()">back</button>
+          <button class="desc-submit" onclick="confirmDesc()">Submit description</button>
+        </div>
+      </div>
+
+      <!-- ?Confirm Data -->
+      <div class="confirm-data right-side">
+        <p>Are You Happy</p>
+        <div class="desc-btns">
+          <button class="confirm-go-back" onclick="confirmBack()">No, go back</button>
+          <button class="confirm-go-ahead" onclick="goAhead()">Yes, go ahead</button>
+        </div>
+      </div>
+
+      <!-- ?Done Alert ---->
+      <div class="done right-side">
+        <p>Ok We are done. Thanks for <br> sending us Your data !</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
